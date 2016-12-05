@@ -1,8 +1,10 @@
 body {
+  color: #0000AA;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font: 32px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
+a, h1 {
   color: #00B7FF;
 }

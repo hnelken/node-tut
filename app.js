@@ -10,6 +10,20 @@ var users = require('./routes/users');
 
 var app = express();
 
+var Sequelize = require('sequelize');
+var sequelize = new Sequelize('bushido', 'root', '', {
+  dialect: "mysql", // or 'sqlite', 'postgres', 'mariadb'
+  port:    3306, // or 5432 (for postgres)
+});
+
+sequelize
+  .authenticate()
+  .then(function(err) {
+    console.log('Connection has been established successfully.');
+  }, function (err) {
+    console.log('Unable to connect to the database:', err);
+  });
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

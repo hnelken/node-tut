@@ -1,0 +1,26 @@
+Express
+    express -e 'project-name'
+        - creates project boilerplate
+
+NPM
+    npm install -g [lib-name]
+        - installs global dependency
+        = sequelize-cli
+    npm install [lib-name] --save
+        - adds dependency
+        = sequelize, mysql
+    npm install
+        - installs dependencies
+    npm start
+        - fires up server app
+
+MySQL
+    mysql.server start
+        - must be re-run after each boot
+    -> create database 'name'
+
+Sequelize
+    sequelize migration:create 
+        --name=[table-name]
+        --underscored
+
