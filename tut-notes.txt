@@ -35,3 +35,4 @@ Sequelize
 
     sequelize db:seed:all
         - runs all seeds
+
