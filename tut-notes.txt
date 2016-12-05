@@ -20,7 +20,18 @@ MySQL
     -> create database 'name'
 
 Sequelize
-    sequelize migration:create 
+    sequelize model:create 
         --name=[table-name]
+        = e.g. --name='users'
         --underscored
+        --attributes [name]:[type],[name]:[type]
 
+    sequelize seed:create
+        --name=[dataset-name]
+        = e.g. --name='default-users'
+               
+    sequelize db:migrate
+        - runs all migrations
+
+    sequelize db:seed:all
+        - runs all seeds
